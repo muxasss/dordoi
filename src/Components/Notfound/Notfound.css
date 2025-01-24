@@ -1,0 +1,41 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f9ff; /* Легкий фон */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .not-found-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .not-found-heading {
+    font-size: 100px;
+    font-weight: bold;
+    color: #ff4d4d; /* Красный цвет для 404 */
+    margin-bottom: 20px;
+  }
+  
+  .not-found-message {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .back-home-link {
+    font-size: 18px;
+    color: #5798ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .back-home-link:hover {
+    text-decoration: underline;
+  }
+  

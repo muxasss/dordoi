@@ -19,54 +19,6 @@ section.section-1 p {
     color: #ccc;
     font-size: 18px;
 }
-/* Базовые стили для .section-1 */
-.section-1 img {
-    width: 100%;
-    height: auto; /* Убираем 100% по высоте, чтобы изображение масштабировалось пропорционально */
-}
-
-section.section-1 h1 {
-    font-weight: 600;
-    margin-top: -500px;
-    font-size: 4rem; /* Используем rem для лучшей адаптивности */
-    margin-left: 10%; /* Используем проценты, чтобы отступы были пропорциональны */
-    color: #fff;
-    text-align: center; /* Центрируем заголовок */
-}
-
-section.section-1 p {
-    margin-left: 10%;
-    color: #ccc;
-    font-size: 1.2rem; /* Используем rem для адаптивности */
-    text-align: center; /* Центрируем текст */
-}
-
-/* Адаптивность */
-@media (max-width: 768px) { /* Для планшетов и мобильных устройств */
-    section.section-1 h1 {
-        font-size: 2.5rem; /* Уменьшаем размер шрифта для мобильных */
-        margin-left: 5%;
-    }
-    section.section-1 p {
-        font-size: 1rem; /* Уменьшаем размер текста */
-        margin-left: 5%;
-    }
-}
-
-@media (max-width: 480px) { /* Для мобильных устройств */
-    section.section-2 h1 {
-        padding-top: -100px;
-    }
-    section.section-1 h1 {
-        font-size: 2rem; /* Еще меньше шрифт для мобильных */
-        margin-left: 2%;
-    }
-    section.section-1 p {
-        font-size: 0.9rem; /* Уменьшаем текст еще больше для мобильных */
-        margin-left: 2%;
-    }
-}
-
 
 .section-2 {
     background-color: #273353;
@@ -87,12 +39,9 @@ section.section-2 p {
     margin-left: 50px;
 }
 
-/* .section-3 - стили для третьего раздела */
 .section-3 {
     height: 550px;
-    padding: 20px; /* Добавим отступы для лучшего вида на мобильных устройствах */
 }
-
 .section-3 button {
     background-color: #5798ff;
     border: 1px solid #5798ff;
@@ -102,276 +51,104 @@ section.section-2 p {
     color: #fff;
     font-weight: 600;
     margin-left: 50px;
-    padding: 10px 20px; /* Добавим внутренние отступы для кнопки */
 }
-
-/* Стили для изображений */
 .section-3 img {
     width: 550px;
     margin-top: 70px;
     margin-left: -50px;
-    max-width: 100%; /* Ограничиваем максимальную ширину для адаптивности */
-    height: auto; /* Высота изображения автоматически будет изменяться */
 }
-
-/* Заголовок */
 .section-3 h1 {
     font-size: 32px;
     font-weight: 500;
     margin-left: 50px;
 }
 
-/* Параграф */
 .section-3 p {
     font-size: 22px;
     color: #333333;
     font-weight: 350;
     margin-left: 50px;
 }
-
-/* Контейнер для всего блока */
 .all-dordoiplaza {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* Разрешаем обтекание элементов на мобильных устройствах */
-    gap: 20px; /* Добавляем промежутки между элементами */
 }
-
-/* Адаптивность */
-@media (max-width: 768px) { /* Для планшетов и устройств с шириной экрана до 768px */
-    .section-3 {
-        height: auto; /* Высота секции адаптируется по содержимому */
-        padding: 20px; /* Уменьшаем отступы */
-    }
-    .section-3 button {
-        width: 120px; /* Уменьшаем ширину кнопки для мобильных */
-        font-size: 14px; /* Уменьшаем размер шрифта */
-        margin-left: 20px; /* Уменьшаем отступы */
-    }
-    .section-3 img {
-        width: 100%; /* Изображение будет растягиваться по ширине контейнера */
-        margin-left: 0; /* Убираем левый отступ */
-        margin-top: 20px; /* Убираем верхний отступ */
-    }
-    .section-3 h1 {
-        font-size: 24px; /* Уменьшаем размер шрифта для заголовка */
-        margin-left: 0; /* Центрируем текст */
-        text-align: center; /* Центрируем заголовок */
-    }
-    .section-3 p {
-        font-size: 18px; /* Уменьшаем размер шрифта для параграфа */
-        margin-left: 0; /* Центрируем текст */
-        text-align: center; /* Центрируем текст */
-    }
-    .all-dordoiplaza {
-        justify-content: center; /* Центрируем блоки в секции */
-    }
-}
-
-@media (max-width: 480px) { /* Для мобильных устройств с экраном шириной до 480px */
-    .section-3 {
-        height: auto; /* Высота адаптируется по содержимому */
-        padding: 10px; /* Уменьшаем отступы */
-    }
-    .section-3 button {
-        width: 100px; /* Еще больше уменьшаем кнопку для мобильных */
-        font-size: 14px;
-        margin-left: 0; /* Убираем отступы */
-        margin-top: 20px; /* Добавляем отступ сверху */
-    }
-    .section-3 img {
-        width: 100%; /* Изображение растягивается на всю ширину */
-        margin-left: 0;
-        margin-top: 10px; /* Добавляем отступ */
-    }
-    .section-3 h1 {
-        font-size: 20px; /* Уменьшаем размер шрифта */
-        margin-left: 0;
-        text-align: center; /* Центрируем заголовок */
-    }
-    .section-3 p {
-        font-size: 16px; /* Уменьшаем размер шрифта */
-        margin-left: 0;
-        text-align: center; /* Центрируем текст */
-    }
-    .all-dordoiplaza {
-        flex-direction: column; /* Располагаем элементы друг под другом */
-        gap: 15px; /* Добавляем промежутки между элементами */
-    }
-}
-
-/* Основной контейнер для .section-4 */
 .section-4 {
-    height: auto; /* Делаем высоту адаптивной */
-    padding: 20px; /* Добавляем отступы для мобильных устройств */
-    position: relative; /* Убираем фиксированное положение */
+    height: 700px;
 }
-
-/* Изображения */
 .section-4 img {
-    width: 100%;
-    height: auto; /* Изображение будет сохранять пропорции */
-    margin-top: 0; /* Убираем фиксированный отступ сверху */
+    margin-top: 1800px;
+    height: 700px;
 }
-
-/* Заголовок */
 .section-4 h1 {
     font-size: 30px;
     color: #fff;
-    margin-top: 20px; /* Убираем слишком большой отрицательный отступ */
+    margin-top: -620px;
     text-align: center;
+    
 }
-
-/* Параграф */
 .section-4 p {
     color: #fff;
     font-size: 20px;
     text-align: center;
 }
-
-/* Галерея */
 .gallery {
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    flex-wrap: wrap; /* Элементы могут переходить на новую строку */
-    justify-content: center; /* Центрируем элементы */
-    margin-top: 20px; /* Убираем фиксированное смещение */
-}
-
-/* Основное изображение */
-.main-image {
-    flex: 1;
-    width: 100%; /* Изображение будет растягиваться на всю ширину */
-    max-width: 600px; /* Ограничиваем максимальную ширину для больших экранов */
-}
-
-/* Секция для мобильных */
-.section-4-phone {
+    margin-top: -1800px;
+  }
+  
+  .main-image {
+    flex: 0.8;
     width: 100%;
-}
+    
+  }
+  .section-4-phone {
+    width: 100%;
 
-/* Стили для изображений в галерее */
-.main-image img {
+
+  }
+  .section-5-partners {
+    height: 150px;
+  }
+  .partners {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px; 
+    gap: 50px;
+  }
+  .main-image img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    padding-left: 0; /* Убираем отступ слева */
-}
-
-/* Сеточная галерея для боковых изображений */
-.side-images {
+    padding-left: 50px;
+  }
+  
+  .side-images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    grid-template-columns: repeat(4, 1fr); /* Создаём сетку: 3 фотографии в строке */
     gap: 10px;
     flex: 0.9;
-}
-
-.side-images img {
-    width: 100%;
+  }
+  
+  .side-images img {
+    width: 200px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
-}
+  }
 
-/* Адаптивность для планшетов и мобильных устройств */
+  .section-5 {
+    height: 400px;
 
-/* Для экранов шириной до 768px (планшеты и маленькие экраны) */
-@media (max-width: 768px) {
-    .section-4 {
-        padding: 20px;
-    }
-    .section-4 h1 {
-        font-size: 24px; /* Уменьшаем размер шрифта */
-    }
-    .section-4 p {
-        font-size: 18px; /* Уменьшаем размер шрифта */
-    }
-    .gallery {
-        flex-direction: column; /* Элементы располагаться в колонку */
-        gap: 20px; /* Увеличиваем промежутки */
-    }
-    .main-image {
-        max-width: 100%; /* Расширяем изображение на всю ширину */
-    }
-    .side-images {
-        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
-    }
-}
-
-/* Для мобильных экранов до 480px */
-@media (max-width: 480px) {
-    .section-4 {
-        padding: 10px; /* Уменьшаем отступы */
-    }
-    .section-4 h1 {
-        font-size: 20px; /* Уменьшаем размер шрифта */
-    }
-    .section-4 p {
-        font-size: 16px; /* Уменьшаем размер шрифта */
-    }
-    .gallery {
-        flex-direction: column; /* Элементы будут располагаться друг под другом */
-        gap: 15px; /* Уменьшаем промежутки между элементами */
-    }
-    .main-image {
-        max-width: 100%; /* Расширяем изображение на всю ширину */
-    }
-    .side-images {
-        grid-template-columns: 1fr; /* Оставляем только одну колонку */
-    }
-}
-
-
-  /* Секция для партнеров */
-.section-5-partners {
-    height: auto; /* Делает высоту секции адаптивной */
-    padding: 20px; /* Добавляем отступы для мобильных */
-}
-
-/* Стили для партнеров */
-.partners {
+  }
+  .section-5 h1 {
     display: flex;
     justify-content: center;
-    align-items: center; /* Выравнивание по центру */
-    gap: 50px;
-    flex-wrap: wrap; /* Даем возможность элементам переходить на новую строку на меньших экранах */
-}
-
-/* Основная секция .section-5 */
-.section-5 {
-    height: auto; /* Делает высоту секции адаптивной */
-    padding: 20px; /* Добавляем отступы */
-}
-
-/* Заголовок в секции 5 */
-.section-5 h1 {
-    display: flex;
-    justify-content: center;
+    padding-top: 1850px;
     font-weight: 500;
     color: #313131;
     font-size: 28px;
-    margin-top: 50px; /* Убираем слишком большие отступы сверху */
-}
-
-/* Адаптивность для экранов до 768px (планшеты и мобильные устройства) */
-@media (max-width: 768px) {
-    .section-5 h1 {
-        font-size: 24px; /* Уменьшаем размер шрифта */
-    }
-    .partners {
-        gap: 30px; /* Уменьшаем промежутки между элементами */
-    }
-}
-
-/* Адаптивность для экранов до 480px (мобильные устройства) */
-@media (max-width: 480px) {
-    .section-5 h1 {
-        font-size: 20px; /* Уменьшаем размер шрифта для мобильных */
-    }
-    .partners {
-        gap: 20px; /* Уменьшаем промежутки между элементами */
-        flex-direction: column; /* Партнеры будут располагаться в колонку */
-    }
-}
+  }

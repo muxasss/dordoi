@@ -3,6 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* Стиль для навигационного меню */
 nav {
     position: fixed;
@@ -15,13 +16,22 @@ nav {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для лучшего контраста */
     z-index: 1000; /* Чтобы меню было на переднем плане */
 }
+.logo {
+    height: 100px;
+}
+/* Контейнер для логотипа и меню */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Ограничиваем ширину меню */
+}
 
-/* Стили для списка */
 ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%; /* Ограничиваем ширину, чтобы меню не растягивалось */
+    width: 70%;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -34,7 +44,7 @@ ul img {
 }
 
 /* Стили для ссылок */
-.menu {
+.menu-item {
     text-decoration: none;
     color: #333; /* Темно-серый цвет для текста */
     font-size: 18px; /* Размер шрифта */
@@ -43,22 +53,90 @@ ul img {
 }
 
 /* Эффект при наведении на ссылки */
-.menu:hover {
+.menu-item:hover {
     color: #5798ff; /* Синий цвет при наведении */
+}
+
+/* Мобильное меню */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Мобильная кнопка "бургер-меню" */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Когда меню открыто, показываем вертикальное меню */
+.menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu.open .menu-item {
+    margin-bottom: 15px;
 }
 
 /* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
+    .nav-container {
+        width: 90%;
+    }
+    .logo {
+        height: 80px;
+    }
     ul {
-        /* flex-direction: column; Для мобильных устройств меню будет вертикальным */
-        gap: 20px;
+        display: none; /* Скрываем обычное меню на мобильных */
     }
 
-    ul img {
-        height: 50px; /* Уменьшаем изображения для мобильных экранов */
+    .menu-toggle {
+        display: flex; /* Показываем кнопку бургера */
     }
 
     .menu {
-        font-size: 16px; /* Уменьшаем размер шрифта для мобильных */
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Чтобы меню не перекрывало лого */
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu.open {
+        display: flex; /* Когда меню открыто, показываем его */
+    }
+
+    .menu-item {
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    ul img {
+        height: 50px; /* Уменьшаем изображение на мобильных */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        font-size: 14px; /* Еще уменьшаем размер шрифта */
     }
 }

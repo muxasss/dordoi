@@ -22,7 +22,6 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
-      <Navfooter />
     </div>
      </Router>
   );

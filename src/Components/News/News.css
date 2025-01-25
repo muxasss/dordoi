@@ -1,0 +1,250 @@
+.news-and-events {
+    background-color: #f7f9ff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    color: #313131;
+    margin-bottom: 40px;
+  }
+  
+  .news-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-item h3 {
+    font-size: 28px;
+    color: #273353;
+  }
+  
+  .news-item .date {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .news-item p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .events-calendar {
+    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .events-calendar h3 {
+    font-size: 28px;
+    color: #273353;
+    margin-bottom: 20px;
+  }
+  
+  .events-calendar ul {
+    font-size: 18px;
+    color: #333;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .events-calendar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .photo-gallery {
+    margin-top: 40px;
+  }
+  
+  .photo-gallery h3 {
+    font-size: 28px;
+    color: #273353;
+    margin-bottom: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  footer {
+    background-color: #273353;
+    padding: 40px;
+    color: white;
+}
+
+footer h1 {
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Обеспечивает адаптивность */
+}
+
+.dordoi-logo {
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.all-a, .all-a1, .all-a2 {
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+footer a {
+    font-size: 18px;
+    color: #d6d6d6;
+    text-decoration: none;
+    line-height: 1.8;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    margin-top: 20px;
+}
+
+.logo-insta, .logo-facebook, .logo-mail, .logo-telegram {
+    color: #fff;
+    height: 50px;
+    border-radius: 40px;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Gilroy Medium';
+}
+
+.logo-facebook {
+    color: #fff;
+    height: 45px;
+    border-radius: 40px;
+    border: 1px solid #ffffff;
+    font-size: 15px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Gilroy Medium';
+}
+
+.logo-facebook:hover {
+    color: #273353;
+    background-color: #ffffff;
+}
+
+.logo-insta:hover, .logo-mail:hover, .logo-telegram:hover {
+    color: #273353;
+    background-color: #fff;
+}
+
+.all-a h1, .all-a1 h1, .all-a2 h1 {
+    font-weight: 400;
+}
+
+/* Адаптивность для мобильных устройств */
+
+/* Для экранов до 768px */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+
+    .links {
+        flex-direction: column; /* Размещение всех элементов вертикально */
+        gap: 30px;
+    }
+
+    footer h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .dordoi-logo {
+        margin: 0 auto 20px auto; /* Центрируем логотип */
+        display: block;
+    }
+
+    .all-a, .all-a1, .all-a2, .all-b {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .logo-insta, .logo-facebook, .logo-mail, .logo-telegram {
+        font-size: 18px;
+        height: 40px;
+        padding: 0 10px;
+    }
+}
+
+/* Для экранов до 480px */
+@media (max-width: 480px) {
+    footer {
+        padding: 15px;
+    }
+
+    .links {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    footer h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .dordoi-logo {
+        height: 100px;
+        margin: 0 auto 15px auto;
+        display: block;
+    }
+
+    .logo-insta, .logo-facebook, .logo-mail, .logo-telegram {
+        font-size: 16px;
+        height: 35px;
+        padding: 0 10px;
+    }
+}

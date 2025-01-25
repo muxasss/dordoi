@@ -1,121 +1,89 @@
 footer {
-    height: 650px;
     background-color: #273353;
-    margin-top: 1800px;
+    padding: 40px;
+    color: white;
 }
+
 footer h1 {
     font-weight: 600;
     color: #fff;
+    margin-top: 20px;
 }
+
 .links {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Обеспечивает адаптивность */
 }
+
 .dordoi-logo {
     height: 120px;
+    margin-bottom: 20px;
 }
-.all-a {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 20%;
+
+.all-a, .all-a1, .all-a2 {
+    text-align: left;
     margin-top: 20px;
-    margin-left: 20%;
-    margin-bottom: 20px; */
-    /* text-align: center; */
+    margin-right: 30px;
 }
-.all-a1 {
-    margin-left: 30px;
-    margin-top: -30px;
-}
-.all-a2 {
-    margin-top: -60px;
-}
-.all-a h1 {
-    font-weight: 400;
-}
+
 footer a {
-    font-size: 20px;
+    font-size: 18px;
     color: #d6d6d6;
     text-decoration: none;
-    line-height: 2;
+    line-height: 1.8;
+    display: block;
+    margin-bottom: 10px;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
-footer h1 {
-    margin-top: 200px;
-}
+
 footer img {
-    margin-top: 150px;
+    margin-top: 20px;
 }
-.a {
-    /* gap: 100px; */
-}
+
 .logo-insta, .logo-facebook, .logo-mail, .logo-telegram {
     color: #fff;
     height: 50px;
-  border-radius: 40px;
-  border: 1px solid #ffffff;
-  font-size: 20px;
-  padding: 0 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: 'Gilroy Medium';
+    border-radius: 40px;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Gilroy Medium';
 }
 
-.logo-whatsapp {
-    color: #273353;
-    height: 40px;
-  border-radius: 40px;
-  border: 1px solid #ccc;
-  font-size: 17px;
-  padding: 0 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: 'Gilroy Medium';
-}
 .logo-facebook {
     color: #fff;
     height: 45px;
-  border-radius: 40px;
-  border: 1px solid #ffffff;
-  font-size: 15px;
-  padding: 0 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: 'Gilroy Medium';
+    border-radius: 40px;
+    border: 1px solid #ffffff;
+    font-size: 15px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Gilroy Medium';
 }
+
 .logo-facebook:hover {
     color: #273353;
-    height: 45px;
-  border-radius: 40px;
-  border: 1px solid;
-  background-color: #ffffff;
-  font-size: 15px;
-  padding: 0 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: 'Gilroy Medium';
+    background-color: #ffffff;
 }
+
 .logo-insta:hover, .logo-mail:hover, .logo-telegram:hover {
     color: #273353;
-    height: 50px;
-  border-radius: 40px;
-  border: 1px solid;
-  background-color: #fff;
-  font-size: 20px;
-  padding: 0 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: 'Gilroy Medium';
+    background-color: #fff;
 }
 
+.all-a h1, .all-a1 h1, .all-a2 h1 {
+    font-weight: 400;
+}
 
-
-/* Медиазапросы для мобильных устройств */
+/* Адаптивность для мобильных устройств */
 
 /* Для экранов до 768px */
 @media (max-width: 768px) {
@@ -124,16 +92,28 @@ footer img {
     }
 
     .links {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: column; /* Размещение всех элементов вертикально */
+        gap: 30px;
     }
 
     footer h1 {
         font-size: 24px;
+        text-align: center;
     }
 
     footer a {
         font-size: 16px;
+        text-align: center;
+    }
+
+    .dordoi-logo {
+        margin: 0 auto 20px auto; /* Центрируем логотип */
+        display: block;
+    }
+
+    .all-a, .all-a1, .all-a2, .all-b {
+        margin: 0 auto;
+        text-align: center;
     }
 
     .logo-insta, .logo-facebook, .logo-mail, .logo-telegram {
@@ -146,20 +126,28 @@ footer img {
 /* Для экранов до 480px */
 @media (max-width: 480px) {
     footer {
-        padding: 20px;
+        padding: 15px;
     }
 
     .links {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: column; 
+        gap: 20px;
     }
 
     footer h1 {
         font-size: 20px;
+        text-align: center;
     }
 
     footer a {
         font-size: 14px;
+        text-align: center;
+    }
+
+    .dordoi-logo {
+        height: 100px;
+        margin: 0 auto 15px auto;
+        display: block;
     }
 
     .logo-insta, .logo-facebook, .logo-mail, .logo-telegram {

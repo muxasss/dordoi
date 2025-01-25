@@ -6,7 +6,7 @@ const Main = () => {
     <div>
         <section className='section-1'>
             
-            <img src='https://barometr.kg/storage/app/uploads/public/5dd/cab/2ca/5ddcab2ca5f92400264109.jpg'></img>
+            <img className='main-photo' src='https://barometr.kg/storage/app/uploads/public/5dd/cab/2ca/5ddcab2ca5f92400264109.jpg'></img>
             <h1>ДОРДОЙ — ЦЕНТР ТОРГОВЛИ И БИЗНЕСА, <br></br> ОБЪЕДИНЯЮЩИЙ КУЛЬТУРЫ</h1>
             <p>Ассоциация Дордой — сила, объединяющая бизнес, <br></br> образование и здоровье для развития общества</p>
         </section>
@@ -23,15 +23,15 @@ const Main = () => {
             <p>Сеть магазинов, торговых точек и рынков под брендом <br></br>Дордой  обеспечивает широкий ассортимент товаров на<br></br> любой вкус.</p>
             <a href='https://www.instagram.com/dordoi_plaza/'><button>Посмотреть</button></a>
             </div>
-            <div>
 
-            <img src='https://static.tildacdn.one/tild3065-3263-4164-b632-633734303466/DJI_0057_1.png' />
+            <div className='all-dordoiplaza'>
+            <img className='img-fc' src='https://static.tildacdn.one/tild3065-3263-4164-b632-633734303466/DJI_0057_1.png' />
             </div>
             </div>
 
             <div className='all-dordoiplaza'>
-            <div>
-            <img className='img-fc' src='https://sport.kg/uploads/posts/2019-10/1569910231_69608691_2423190701051059_4824849063553794048_n.jpg' />
+            <div className='all-dordoiplaza'>
+            <img className='img-fc2' src='https://sport.kg/uploads/posts/2019-10/1569910231_69608691_2423190701051059_4824849063553794048_n.jpg' />
             </div>
             <div>
             <h1>Футбольный клуб</h1>
@@ -46,14 +46,14 @@ const Main = () => {
             <p>Наш университет предоставляет качественное <br></br> образование, обеспечивая студентов знаниями, <br></br> которые помогут им добиться успеха в карьере.</p>
             
             </div>
-            <div>
-            <img className='img-fc' src='https://salymbekov.com/wp-content/uploads/2022/07/bc0b3685.jpg' />
+            <div className='all-dordoiplaza'>
+            <img className='img-fc3' src='https://salymbekov.com/wp-content/uploads/2022/07/bc0b3685.jpg' />
             </div>
             </div>
 
             <div className='all-dordoiplaza'>
-            <div>
-            <img className='img-fc' src='https://salymbekov.com/wp-content/uploads/2021/01/o-biznes-shkole.jpg' />
+            <div className='all-dordoiplaza'>
+            <img className='img-fc4' src='https://salymbekov.com/wp-content/uploads/2021/01/o-biznes-shkole.jpg' />
             </div>
             <div>
             <h1>Бизнес-школа</h1>
@@ -68,7 +68,7 @@ const Main = () => {
             <p>Клиника Дордой предоставляет высококачественные <br></br> медицинские услуги с использованием новейших <br></br> технологий и высококвалифицированных специалистов.</p>
             
             </div>
-            <div>
+            <div className='all-dordoiplaza'>
             <img className='img-fc' src='https://salymbekov.com/wp-content/uploads/2022/04/bc0b3748.jpg' />
             </div>
             </div>
@@ -112,6 +112,46 @@ const Main = () => {
             <a target='blank' href='https://www.instagram.com/doc_university_kg/'><img className='section-5-partners' src='image-removebg-preview (14).png' /></a>
             </div>
         </section>
+        <footer>
+            <div className='links'>
+            <div className='all-b'>
+            <img className='dordoi-logo' src='dordoi-association-logo.png' />
+            <br></br>
+            <a>address: 115 Ibraimova, Bishkek</a>
+            <br></br>
+            <a>tel:+996312690590</a>
+            <br></br>
+            <a href='https://www.dordois@gmail.com/'>email: dordois@gmail.com</a>
+            </div>
+
+        <div className='all-a'>
+            <h1>Useful links</h1>
+            <a href='https://www.instagram.com/dordoi__association/'>Dordoi Association</a>
+            <br></br>
+            <a href='https://www.instagram.com/dordoi_plaza/'>Dordoi Plaza</a>
+            <br></br>
+            <a href='https://cinematica.kg/'>Cinematica</a>
+            <br></br>   
+            <a href='https://edu.gov.kg/'>MES KR</a>
+            </div>
+            <div className='all-a1'>
+                <h1>Contacts</h1>
+                <a href='https://salymbekov.com/en/mezhdunarodnyj-fakultet-mediciny/'>International Faculty of Medicine</a>
+                <br></br>
+                <a href='https://salymbekov.com/en/mezhdunarodnyj-kolledzh-it-i-biznesa/'>International College of IT and Business</a>
+                <br></br>
+                <a href='https://salymbekov.com/en/o-biznes-shkole-salymbekova/'>Salymbekov Business School</a>
+            </div >
+            <div className='all-a2'>
+
+            <h1>Our hospitals</h1>
+            <a href='https://www.instagram.com/lasmed.kg/'>Lasmed</a>
+            <br></br>
+            <a href='https://www.instagram.com/doc_university_kg/'>DOC university hospital</a>
+            </div>
+            </div>
+        
+        </footer>
     </div>
   )
 }

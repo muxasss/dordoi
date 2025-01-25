@@ -6,7 +6,7 @@ const Navfooter = () => {
     <div>
         <footer>
             <div className='links'>
-            <div>
+            <div className='all-b'>
             <img className='dordoi-logo' src='dordoi-association-logo.png' />
             <br></br>
             <a>address: 115 Ibraimova, Bishkek</a>
